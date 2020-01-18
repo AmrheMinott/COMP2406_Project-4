@@ -1,0 +1,12 @@
+html
+  head
+    title Get Questions Route
+
+body
+
+  div#main
+    h1 Questions from Database
+
+    ul
+      each q in qS.questions
+        li: a(href=`http://localhost:3000/questions/${q._id}`) #{q.question}

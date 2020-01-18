@@ -1,0 +1,12 @@
+html
+  head
+    title Get Quizzes Route
+
+body
+
+  div#main
+    h1 Quizzes from Database
+
+    ul
+      each q in qZ.quizzes
+        li: a(href=`http://localhost:3000/quiz/${q._id}`) #{q.creator} #{q.tags}

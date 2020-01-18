@@ -1,0 +1,18 @@
+{
+  "name": "assignment-4",
+  "version": "1.0.0",
+  "description": "This is a Quiz Creator utilizing mongo db as the area document/objects are stored for the questions and quizzes",
+  "main": "createQuizScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amrhe Minott 101107093",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.3.4",
+    "pug": "^2.0.4",
+    "xml": "^1.0.1"
+  }
+}

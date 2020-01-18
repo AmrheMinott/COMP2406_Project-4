@@ -1,0 +1,15 @@
+html
+	head
+		title The Question You Selected
+
+	body
+		p= "ID of this question is for reference: " + _id
+		p= "Question Text: " + question
+		p= "Category: " + category
+		p= "Difficulty: " + difficulty
+		p= "Correct Answer: " + correct_answer
+
+		p="Incorrect answers"
+		ul
+			each iC in incorrect_answers
+				li= iC

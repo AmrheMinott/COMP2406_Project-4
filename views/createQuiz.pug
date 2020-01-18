@@ -1,0 +1,32 @@
+html
+	head
+		Create Quiz
+
+	body
+		h1 Create a Quiz
+
+    input#creatorName(type="textbox", name="artist")
+
+		p Enter data into the filter form below and hit refresh to find matching cards.
+
+		form(method="POST", action='/quizzes')
+			p Creator name:
+				input#creatorName(type="textbox", name="artist")
+			p tags:
+				input#tags(type="textbox", name="name")
+
+
+			p Category:
+				select#category(name="category")
+					each c in result.cat
+						option(value=c, name="category") #{c}
+
+			p Difficulty:
+				select#difficulty(name="difficulty")
+					each d in result.dif
+						option(value=d, name="difficulty") #{d}
+
+			input(type='submit' , value='Refresh')
+
+
+		div#results

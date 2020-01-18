@@ -1,0 +1,35 @@
+<html>
+  <body onload="loadSelect()">
+    <head>
+      <title>Create Quiz</title>
+    </head>
+
+    Creator's Name: <input id="creatorName" type="text" name="name">
+    <br>
+    Quiz Tag's: <input id="tags" type="text" name="tag">
+    <br>
+
+    <div id="questionList"></div>
+    <br>
+    <div id="yourQuizId"></div>
+
+    <input type="button" value="Save Quiz" onclick="saveQuiz()">
+    <input type="button" value="Clear Div" onclick="clearDiv()">
+
+    <br>
+    <br>
+
+    <p>Look for a question by selecting the Category OR the Difficulty</p>
+
+    Category<select id="category" onchange="selectChange()">
+    </select>
+    ||
+    Difficulty<select id="difficulty" onchange="selectChange()">
+    </select>
+
+
+    <div id="search/add"></div>
+
+    <script src="createQuizScript.js"></script>
+  </body>
+</html>

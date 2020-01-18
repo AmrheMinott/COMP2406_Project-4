@@ -1,0 +1,16 @@
+html
+	head
+		title= creator
+
+	body
+
+		p= "ID of this quiz is for reference is :" + _id
+		p= "This quiz belongs to: " + creator
+		p= "Tags"
+		ul
+			each t in tags
+				li= t
+		p= "Questions"
+		ul
+			each q in questions
+				li: a(href=`http://localhost:3000/questions/${q._id}`) #{q.question}
