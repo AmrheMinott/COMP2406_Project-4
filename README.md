@@ -11,6 +11,7 @@ We mainly support the creating and retrieving of data. None of the other CRUD fu
 
 
 /****URL ROUTES****/
+
 GET
 questions			=> returns a total of 25 questions from from database
 questionID			=> we get the specific question from the database
