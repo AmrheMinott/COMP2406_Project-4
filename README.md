@@ -1,6 +1,5 @@
 # Project4README
 
-BOTH READMES ARE THE SAME
 Amrhe Minott
 Student Number: 101107093
 
@@ -11,12 +10,12 @@ Project gives you the user the ability to create your own quiz by gathering an a
 We mainly support the creating and retrieving of data. None of the other CRUD functionalities are taken into account
 
 
-URL ROUTES
+/****URL ROUTES****/
 GET
-questions				=> returns a total of 25 questions from from database
+questions			=> returns a total of 25 questions from from database
 questionID			=> we get the specific question from the database
-quizzes					=> we get all the quizzes form the server that meet the parameter for creator and tag
-quizID					=> we get a specific quiz Id from the database
+quizzes				=> we get all the quizzes form the server that meet the parameter for creator and tag
+quizID				=> we get a specific quiz Id from the database
 createQuiz			=> this loads on the select tags the values of the distinct category and difficulty
 
 POST
@@ -25,6 +24,9 @@ quizzes	=> this is the route that allows for the user to save their data to the 
 
 DO npm install in the folder given
 this gives the node modules you will need
+
+
+/****SETUP PROCESS****/
 
 Running MONGODB for the quizzes and question Database server file
 
@@ -58,7 +60,7 @@ Step Four node serverP4.js
 
 
 
-Important details to to know
+/****Important details to to know****/
 Querying for tags array of the quizzes collection
 
 	The query parameter for the tag accepts a single string this string or “tag” is used to find all the quizzes in the database that contains that particular tag in the tags array of that quiz document
@@ -102,17 +104,17 @@ DATA VALIDATION
 When data is saved the validation process makes use of the typeof function.
 It is expected that data be given in the following format
 
-creator														=> string
+creator						=> string
 
-tags															=> object
-	elements of tags								=> string
-questions													=> object
+tags						=> object
+	elements of tags				=> string
+questions					=> object
 
 elements of the questions go as follows
 
-category													=> string
-difficulty												=> string
-question													=> string
-correct_answer										=> string
-incorrect_answers									=> object
-	elements of incorrect_answer		=> string
+category						=> string
+difficulty						=> string
+question						=> string
+correct_answer						=> string
+incorrect_answers					=> object
+	elements of incorrect_answer				=> string
