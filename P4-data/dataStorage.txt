@@ -1,1 +1,4 @@
-This is where the Wt files are held
+This is where the Wt files are held after the you have exectued mongod command see README file on how to execute the mongod into this folder
+
+
+Highly remcommended to keep as the it keeps the folder organised and not clutered with WT fiels
